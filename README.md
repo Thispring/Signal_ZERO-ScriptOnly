@@ -1,5 +1,9 @@
 # Signal ZERO
 
+<p align="center">
+  <img src="ScreenShot/s1.jpg" width="85%" alt="메인 화면">
+</p>
+
 Unity 기반으로 제작한 3인칭 슈팅 게임입니다.
 
 기존에 개발한 **Cord: Marigold**의 게임 시스템을 기반으로, 공모전 출품을 위해 게임의 아트 에셋과 세계관을 새롭게 구성하고 보스전, 보조 로봇, 튜토리얼 등 새로운 게임 플레이 시스템을 추가 개발했습니다.
@@ -8,7 +12,7 @@ Unity 기반으로 제작한 3인칭 슈팅 게임입니다.
 
 ---
 
-## 📖 프로젝트 소개
+## 프로젝트 소개
 
 Signal ZERO는 적과 전투하며 스테이지를 진행하는 3인칭 슈팅 게임입니다.
 
@@ -18,17 +22,20 @@ Signal ZERO는 적과 전투하며 스테이지를 진행하는 3인칭 슈팅 �
 
 | 항목 | 내용 |
 | --- | --- |
-| 개발 기간 | 1개월 |
-| 개발 인원 | 총 4명 |
-| 팀 구성 | 아트 3명 / 기획·프로그래밍 1명 (본인) |
 | 플랫폼 | PC |
 | 개발 엔진 | Unity |
 | 개발 언어 | C# |
-| 담당 역할 | 게임 기획 / 클라이언트 프로그래밍 |
+| 개발 기간 | 2025.08.04 ~ 2025.09.04 |
+| 개발 인원 | 총 4명 |
+| 팀 구성 | 아트 3명 / 기획·프로그래밍 1명 (본인) |
 
 ---
 
-## 🎮 Gameplay
+## Gameplay
+
+| 일반 스테이지 | 중간 보스 스테이지 |
+| :---: | :---: |
+| <img src="ScreenShot/s5.jpg" width="100%" alt="일반 스테이지"> | <img src="ScreenShot/s7.jpg" width="100%" alt="중간 보스 스테이지"> |
 
 게임 플레이 영상은 아래 링크에서 확인할 수 있습니다.
 
@@ -36,7 +43,21 @@ Signal ZERO는 적과 전투하며 스테이지를 진행하는 3인칭 슈팅 �
 
 ---
 
-## 👨‍💻 My Role
+## Download
+
+게임 실행파일은 아래 링크에서 다운로드 할 수 있습니다.
+
+**Windows**
+
+[Download for Windows](https://drive.google.com/file/d/1VdHJm5ZFoXLx-FKhUd7o9kDCNno-rHhl/view?usp=drive_link)
+
+**macOS**
+
+[Download for macOS](https://drive.google.com/file/d/1Au9_S1u2VYu-R0du6c2_p5_7zrxpcQBt/view?usp=drive_link)
+
+---
+
+## My Role
 
 ### Client Programming
 
@@ -52,9 +73,9 @@ Signal ZERO는 적과 전투하며 스테이지를 진행하는 3인칭 슈팅 �
 
 ---
 
-# 🎯 주요 구현 기능
+# 주요 구현 기능
 
-## 🤖 보스 패턴 및 드론 연동 시스템
+## 보스 패턴 및 드론 연동 시스템
 
 보스전에서 단순히 일정한 공격을 반복하는 것이 아니라, 공격 대기 시간 동안 드론을 소환하고 드론의 생존 상태에 따라 보스의 공격 강도를 결정하도록 구현했습니다.
 
@@ -66,14 +87,14 @@ Signal ZERO는 적과 전투하며 스테이지를 진행하는 3인칭 슈팅 �
 
 **관련 코드**
 
-- [BossFSM.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/Boss/BossFSM.cs)
-- [BossBehaviorSystem.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/Boss/BossBehaviorSystem.cs)
-- [BossDroneManager.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/Boss/BossDroneManager.cs)
-- [BossStatusManager.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/Boss/BossStatusManager.cs)
+- [BossFSM.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/Boss/BossFSM.cs)
+- [BossBehaviorSystem.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/Boss/BossBehaviorSystem.cs)
+- [BossDroneManager.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/Boss/BossDroneManager.cs)
+- [BossStatusManager.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/Boss/BossStatusManager.cs)
 
 ---
 
-## 🛡️ 보조 로봇 지원 시스템
+## 보조 로봇 지원 시스템
 
 플레이어를 지원하는 보조 로봇을 구현하고, 로봇의 종류에 따라 서로 다른 지원 기능을 사용할 수 있도록 구성했습니다.
 
@@ -85,14 +106,14 @@ Signal ZERO는 적과 전투하며 스테이지를 진행하는 3인칭 슈팅 �
 
 **관련 코드**
 
-- [SupportBotFSM.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/SupportBot/SupportBotFSM.cs)
-- [SupportBotStatusManager.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/SupportBot/SupportBotStatusManager.cs)
-- [SupportBotSetting.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/SupportBot/SupportBotSetting.cs)
-- [SearchEnemyManager.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/GameManager/SearchEnemyManager.cs)
+- [SupportBotFSM.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/SupportBot/SupportBotFSM.cs)
+- [SupportBotStatusManager.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/SupportBot/SupportBotStatusManager.cs)
+- [SupportBotSetting.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/SupportBot/SupportBotSetting.cs)
+- [SearchEnemyManager.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/GameManager/SearchEnemyManager.cs)
 
 ---
 
-## 📚 단계별 튜토리얼 시스템
+## 단계별 튜토리얼 시스템
 
 게임의 주요 조작과 시스템을 순차적으로 안내할 수 있도록 단계별 튜토리얼 시스템을 구현했습니다.
 
@@ -104,16 +125,16 @@ Signal ZERO는 적과 전투하며 스테이지를 진행하는 3인칭 슈팅 �
 
 **관련 코드**
 
-- [TutorialController.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/Tutorial/TutorialController.cs)
-- [TutorialStep.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/Tutorial/TutorialStep.cs)
-- [TutorialStep_SpawnEnemies.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/Tutorial/TutorialStep_SpawnEnemies.cs)
-- [TutorialStep_ActiveSupportBot.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/Tutorial/TutorialStep_ActiveSupportBot.cs)
-- [TutorialStep_WaitForSkillUse.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/Tutorial/TutorialStep_WaitForSkillUse.cs)
-- [TutorialStep_OpenShop.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/Tutorial/TutorialStep_OpenShop.cs)
+- [TutorialController.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/Tutorial/TutorialController.cs)
+- [TutorialStep.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/Tutorial/TutorialStep.cs)
+- [TutorialStep_SpawnEnemies.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/Tutorial/TutorialStep_SpawnEnemies.cs)
+- [TutorialStep_ActiveSupportBot.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/Tutorial/TutorialStep_ActiveSupportBot.cs)
+- [TutorialStep_WaitForSkillUse.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/Tutorial/TutorialStep_WaitForSkillUse.cs)
+- [TutorialStep_OpenShop.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/Tutorial/TutorialStep_OpenShop.cs)
 
 ---
 
-## 🛡️ 적 보호막 시스템
+## 적 보호막 시스템
 
 특정 적이 등장하는 동안 다른 일반 적이 보호 상태를 유지하도록 적 보호막 시스템을 구현했습니다.
 
@@ -125,13 +146,13 @@ Signal ZERO는 적과 전투하며 스테이지를 진행하는 3인칭 슈팅 �
 
 **관련 코드**
 
-- [EnemyShieldManager.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/Enemy/EnemyShieldManager.cs)
-- [EnemyShield.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/Enemy/EnemyShield.cs)
-- [SearchEnemyManager.cs](https://github.com/Thispring/Signal_ZERO-ScriptOnly/blob/main/Script/GameManager/SearchEnemyManager.cs)
+- [EnemyShieldManager.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/Enemy/EnemyShieldManager.cs)
+- [EnemyShield.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/Enemy/EnemyShield.cs)
+- [SearchEnemyManager.cs](https://github.com/Thispring/Signal_ZERO/blob/main/Script/GameManager/SearchEnemyManager.cs)
 
 ---
 
-# 🛠 사용 기술
+# 사용 기술
 
 | 기술 | 활용 |
 | --- | --- |
@@ -139,14 +160,6 @@ Signal ZERO는 적과 전투하며 스테이지를 진행하는 3인칭 슈팅 �
 | C# | 게임 로직 및 시스템 구현 |
 | Unity Physics | Raycast 기반 사격 및 게임 오브젝트 상호작용 처리 |
 | Unity UI | 체력, 스킬, 튜토리얼 및 게임 인터페이스 구현 |
-
----
-
-# 🔗 Links
-
-### 🎥 Gameplay Video
-
-[YouTube - Signal ZERO Gameplay](https://www.youtube.com/watch?v=Flv2JUqmpLE)
 
 ---
 
